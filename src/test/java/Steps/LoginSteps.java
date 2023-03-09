@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,16 +15,17 @@ import java.util.concurrent.TimeUnit;
 public class LoginSteps {
 
     WebDriver driver;
-//    @Given("User navigates to the BookCart application")
-//    public void userNavigatesToTheBookCartApplication() {
-//        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-//        driver = new ChromeDriver();
-//        driver.get("https://bookcart.azurewebsites.net/");
-//        WebDriver.Options manage = driver.manage();
-//        manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        manage.window().maximize();
-//        System.out.println(driver.getTitle());
-//    }
+
+    @Given("User navigates to the BookCart application login")
+    public void userNavigatesToTheBookCartApplicationLogin() {
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        driver = new ChromeDriver();
+        driver.get("https://bookcart.azurewebsites.net/");
+        WebDriver.Options manage = driver.manage();
+        manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        manage.window().maximize();
+        System.out.println(driver.getTitle());
+    }
 
     @And("User click on the login button")
     public void userClickOnTheLoginButton() {

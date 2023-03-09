@@ -16,7 +16,7 @@ public class AddToCartSteps {
 
     @Given("User navigates to the BookCart application")
     public void userNavigatesToTheBookCartApplication() {
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://bookcart.azurewebsites.net/");
         WebDriver.Options manage = driver.manage();

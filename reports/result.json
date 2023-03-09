@@ -1,0 +1,420 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11847279416,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to the BookCart application",
+            "match": {
+              "location": "AddToCartSteps.userNavigatesToTheBookCartApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Add to cart",
+        "description": "",
+        "id": "bookcart-application-tests;add-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 284674875,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user login into the application with \"akperrine\" \"Practice123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"akperrine\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"Practice123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "AddToCartSteps.userLoginIntoTheApplicationWith(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119441959,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user searches for a book \"Roomies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Roomies\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AddToCartSteps.userSearchesForABook(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2053473834,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user adds the book to the cart",
+            "match": {
+              "location": "AddToCartSteps.userAddsTheBookToTheCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116225625,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the cart badge should get updated",
+            "match": {
+              "location": "AddToCartSteps.theCartBadgeShouldGetUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8592129875,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to the BookCart application",
+            "match": {
+              "location": "AddToCartSteps.userNavigatesToTheBookCartApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Add to cart",
+        "description": "",
+        "id": "bookcart-application-tests;add-to-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 186047000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user login into the application with \"akperrine\" \"Practice123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"akperrine\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"Practice123\"",
+                  "offset": 49
+                }
+              ],
+              "location": "AddToCartSteps.userLoginIntoTheApplicationWith(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103855917,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user searches for a book \"The Simple Wild\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Simple Wild\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AddToCartSteps.userSearchesForABook(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2034413666,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user adds the book to the cart",
+            "match": {
+              "location": "AddToCartSteps.userAddsTheBookToTheCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 118878708,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the cart badge should get updated",
+            "match": {
+              "location": "AddToCartSteps.theCartBadgeShouldGetUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bookcart Application tests",
+    "description": "",
+    "id": "bookcart-application-tests",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/addToCart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7228465750,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to the BookCart application login",
+            "match": {
+              "location": "LoginSteps.userNavigatesToTheBookCartApplicationLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50266959,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on the login button",
+            "match": {
+              "location": "LoginSteps.userClickOnTheLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Login should be success",
+        "description": "",
+        "id": "bookcart-application-tests;login-should-be-success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 106351500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the username as \"akperrine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"akperrine\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersTheUsernameAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37784625,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters the password as \"Practice1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Practice1234\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersThePasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43096958,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginSteps.userClicksOnTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5115841958,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login should be success",
+            "match": {
+              "location": "LoginSteps.loginShouldBeSuccess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10489162500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to the BookCart application login",
+            "match": {
+              "location": "LoginSteps.userNavigatesToTheBookCartApplicationLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59758917,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on the login button",
+            "match": {
+              "location": "LoginSteps.userClickOnTheLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Login should not be success",
+        "description": "",
+        "id": "bookcart-application-tests;login-should-not-be-success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84355375,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the username as \"ak\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ak\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersTheUsernameAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37525041,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters the password as \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersThePasswordAs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42844458,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginSteps.userClicksOnTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5444973792,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Login should fail",
+            "match": {
+              "location": "LoginSteps.loginShouldFail()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bookcart Application Tests",
+    "description": "",
+    "id": "bookcart-application-tests",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/login.feature",
+    "tags": []
+  }
+]
