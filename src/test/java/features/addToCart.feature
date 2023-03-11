@@ -4,6 +4,7 @@ Feature: Bookcart Application tests
 #  Background:
 #    Given User navigates to the BookCart application
 
+  @cleanCart
   Scenario Outline: Add to cart
     And user login into the application with "<username>" "<password>"
     And user searches for a book "<book>"
