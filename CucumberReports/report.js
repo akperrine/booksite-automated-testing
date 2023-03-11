@@ -130,11 +130,13 @@ formatter.match({
   "location": "AddToCartSteps.theCartBadgeShouldGetUpdated()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:568)\n\tat org.testng.Assert.assertEquals(Assert.java:578)\n\tat Steps.AddToCartSteps.theCartBadgeShouldGetUpdated(AddToCartSteps.java:48)\n\tat ✽.the cart badge should get updated(src/test/java/features/addToCart.feature:11)\n",
+  "status": "failed"
 });
 formatter.afterstep({
   "status": "passed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
@@ -210,222 +212,13 @@ formatter.match({
   "location": "AddToCartSteps.theCartBadgeShouldGetUpdated()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat org.testng.Assert.assertEquals(Assert.java:568)\n\tat org.testng.Assert.assertEquals(Assert.java:578)\n\tat Steps.AddToCartSteps.theCartBadgeShouldGetUpdated(AddToCartSteps.java:48)\n\tat ✽.the cart badge should get updated(src/test/java/features/addToCart.feature:11)\n",
+  "status": "failed"
 });
 formatter.afterstep({
   "status": "passed"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("src/test/java/features/login.feature");
-formatter.feature({
-  "name": "Bookcart Application Tests",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click on the login button",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginSteps.userClickOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login should be success",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoke"
-    },
-    {
-      "name": "@reg"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters the username as \"akperrine\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersTheUsernameAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters the password as \"Practice123\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersThePasswordAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginSteps.userClicksOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Login should be success",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.loginShouldBeSuccess()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click on the login button",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginSteps.userClickOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login should not be success",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@reg"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters the username as \"ak\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersTheUsernameAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters the password as \"1234\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersThePasswordAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginSteps.userClicksOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Login should fail",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.loginShouldFail()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
   "status": "passed"
 });

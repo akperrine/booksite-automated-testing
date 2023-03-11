@@ -5,6 +5,7 @@ import cucumber.api.java.After;
 import cucumber.api.java.AfterStep;
 import cucumber.api.java.Before;
 import cucumber.api.java.BeforeStep;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,6 +33,12 @@ public class MyHooks extends DriverInit{
 
     @After
     public void afterScenario(Scenario scenario) {
+        boolean failed = scenario.isFailed();
+        System.out.println("is Failed? "+ failed);
+        if(failed) {
+           byte[] screenshotAs = driver.getScreenshotAs(OutputType.BYTES);
+           scenario.embed(screenshotAs, "image/png");
+        }
 
         driver.quit();
     }
