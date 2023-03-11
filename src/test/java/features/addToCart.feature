@@ -1,8 +1,8 @@
 #@E2E can have a tag on a whole feature
 Feature: Bookcart Application tests
 
-  Background:
-    Given User navigates to the BookCart application
+#  Background:
+#    Given User navigates to the BookCart application
 
   Scenario Outline: Add to cart
     And user login into the application with "<username>" "<password>"

@@ -4,51 +4,18 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.jupiter.api.BeforeEach;
+import hooks.DriverInit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.concurrent.TimeUnit;
 
-public class LoginSteps {
-
-    WebDriver driver;
-    WebDriverWait wait;
-
-    @Given("User navigates to the BookCart application login")
-    public void userNavigatesToTheBookCartApplicationLogin() {
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
-        driver.get("https://bookcart.azurewebsites.net/");
-        WebDriver.Options manage = driver.manage();
-        manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        manage.window().maximize();
-        System.out.println(driver.getTitle());
-    }
-
+public class LoginSteps extends DriverInit {
     @And("User click on the login button")
     public void userClickOnTheLoginButton() {
         driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
     }
-
-//    @And("User enters the username as akperrine")
-//    public void userEntersTheUsernameAs() {
-//        driver.findElement(By.xpath("//input[@id='mat-input-0']"))
-//                .sendKeys("akperrine");
-//    }
-//
-//    @And("User enters the password as Practice1234")
-//    public void userEntersThePasswordAs() {
-//        driver.findElement(By.xpath("//input[@id='mat-input-1']"))
-//                .sendKeys("Practice123");
-//    }
 
     @When("User clicks on the login button")
     public void userClicksOnTheLoginButton() {
@@ -62,7 +29,6 @@ public class LoginSteps {
         String text = wait.until(ExpectedConditions.visibilityOf(userEle)).getText();
         System.out.println(text);
 
-        driver.quit();
     }
 
 //    @Given("User enters the username as ak")
@@ -84,7 +50,6 @@ public class LoginSteps {
         System.out.println(text);
         Assert.assertEquals(text.trim(), "Username or Password is incorrect." );
 
-        driver.quit();
     }
 
     @Given("User enters the username as {string}")

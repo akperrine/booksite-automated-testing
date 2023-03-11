@@ -3,53 +3,10 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9109078209,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 92042,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "MyHooks.beforeStep(Scenario)"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "User navigates to the BookCart application",
-            "match": {
-              "location": "AddToCartSteps.userNavigatesToTheBookCartApplication()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 674833,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "MyHooks.afterStep(Scenario)"
-                }
-              }
-            ],
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
         "before": [
           {
             "result": {
-              "duration": 504791,
+              "duration": 10081291667,
               "status": "passed"
             },
             "match": {
@@ -64,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 1624042,
+              "duration": 92673417,
               "status": "passed"
             },
             "match": {
@@ -77,13 +34,13 @@
         "steps": [
           {
             "result": {
-              "duration": 200951708,
+              "duration": 243914333,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 104042,
+                  "duration": 245542,
                   "status": "passed"
                 },
                 "match": {
@@ -109,7 +66,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 20208,
+                  "duration": 110083,
                   "status": "passed"
                 },
                 "match": {
@@ -121,13 +78,13 @@
           },
           {
             "result": {
-              "duration": 121316583,
+              "duration": 141121084,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 46042,
+                  "duration": 7209,
                   "status": "passed"
                 },
                 "match": {
@@ -149,7 +106,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 26000,
+                  "duration": 22958,
                   "status": "passed"
                 },
                 "match": {
@@ -161,13 +118,13 @@
           },
           {
             "result": {
-              "duration": 2034050458,
+              "duration": 2030000583,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 62541,
+                  "duration": 5292,
                   "status": "passed"
                 },
                 "match": {
@@ -183,7 +140,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 49708,
+                  "duration": 136167,
                   "status": "passed"
                 },
                 "match": {
@@ -195,13 +152,13 @@
           },
           {
             "result": {
-              "duration": 1230996250,
+              "duration": 1154409750,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 133417,
+                  "duration": 28709,
                   "status": "passed"
                 },
                 "match": {
@@ -217,7 +174,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 20125,
+                  "duration": 22250,
                   "status": "passed"
                 },
                 "match": {
@@ -235,53 +192,10 @@
         ]
       },
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8020785583,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 21333,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "MyHooks.beforeStep(Scenario)"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "User navigates to the BookCart application",
-            "match": {
-              "location": "AddToCartSteps.userNavigatesToTheBookCartApplication()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 77834,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "MyHooks.afterStep(Scenario)"
-                }
-              }
-            ],
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
         "before": [
           {
             "result": {
-              "duration": 46041,
+              "duration": 4684366708,
               "status": "passed"
             },
             "match": {
@@ -296,7 +210,7 @@
         "after": [
           {
             "result": {
-              "duration": 216542,
+              "duration": 84889000,
               "status": "passed"
             },
             "match": {
@@ -309,13 +223,13 @@
         "steps": [
           {
             "result": {
-              "duration": 201209083,
+              "duration": 199768583,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 60959,
+                  "duration": 35750,
                   "status": "passed"
                 },
                 "match": {
@@ -341,7 +255,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 28000,
+                  "duration": 23209,
                   "status": "passed"
                 },
                 "match": {
@@ -353,13 +267,13 @@
           },
           {
             "result": {
-              "duration": 143340250,
+              "duration": 135005666,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 60125,
+                  "duration": 5208,
                   "status": "passed"
                 },
                 "match": {
@@ -381,7 +295,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 21125,
+                  "duration": 19958,
                   "status": "passed"
                 },
                 "match": {
@@ -393,13 +307,13 @@
           },
           {
             "result": {
-              "duration": 2038509709,
+              "duration": 2028095584,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 48625,
+                  "duration": 19875,
                   "status": "passed"
                 },
                 "match": {
@@ -415,7 +329,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 53584,
+                  "duration": 116042,
                   "status": "passed"
                 },
                 "match": {
@@ -427,13 +341,13 @@
           },
           {
             "result": {
-              "duration": 1207875875,
+              "duration": 1642296291,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 109875,
+                  "duration": 15458,
                   "status": "passed"
                 },
                 "match": {
@@ -449,7 +363,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 162417,
+                  "duration": 28625,
                   "status": "passed"
                 },
                 "match": {
@@ -472,6 +386,476 @@
     "id": "bookcart-application-tests",
     "keyword": "Feature",
     "uri": "src/test/java/features/addToCart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 43489708,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 57333,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "User click on the login button",
+            "match": {
+              "location": "LoginSteps.userClickOnTheLoginButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 26083,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4457459875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login should be success",
+        "description": "",
+        "id": "bookcart-application-tests;login-should-be-success",
+        "after": [
+          {
+            "result": {
+              "duration": 76728666,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110354750,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5166,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "User enters the username as \"akperrine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"akperrine\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersTheUsernameAs(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 24167,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85202583,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5292,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "User enters the password as \"Practice123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Practice123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersThePasswordAs(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 18250,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33631792,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 4917,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginSteps.userClicksOnTheLoginButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 51875,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21363459,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5875,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "Login should be success",
+            "match": {
+              "location": "LoginSteps.loginShouldBeSuccess()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 19333,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@reg"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 42689792,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 19959,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "User click on the login button",
+            "match": {
+              "location": "LoginSteps.userClickOnTheLoginButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 24834,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8059896291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login should not be success",
+        "description": "",
+        "id": "bookcart-application-tests;login-should-not-be-success",
+        "after": [
+          {
+            "result": {
+              "duration": 83822417,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98734542,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5042,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "User enters the username as \"ak\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ak\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersTheUsernameAs(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 20291,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33489125,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5417,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "User enters the password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.userEntersThePasswordAs(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 18666,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32046583,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 4334,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginSteps.userClicksOnTheLoginButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 18625,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 350164583,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5375,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 19,
+            "name": "Login should fail",
+            "match": {
+              "location": "LoginSteps.loginShouldFail()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 41083,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "MyHooks.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "Bookcart Application Tests",
+    "description": "",
+    "id": "bookcart-application-tests",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/login.feature",
     "tags": []
   }
 ]

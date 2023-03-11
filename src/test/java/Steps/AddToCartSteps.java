@@ -3,31 +3,14 @@ package Steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import hooks.DriverInit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.concurrent.TimeUnit;
+public class AddToCartSteps extends DriverInit {
 
-public class AddToCartSteps {
-
-    WebDriver driver;
-    WebDriverWait wait;
-
-    @Given("User navigates to the BookCart application")
-    public void userNavigatesToTheBookCartApplication() {
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
-        driver.get("https://bookcart.azurewebsites.net/");
-        WebDriver.Options manage = driver.manage();
-        manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        manage.window().maximize();
-        System.out.println(driver.getTitle());
-    }
     @Given("user login into the application with {string} {string}")
     public void userLoginIntoTheApplicationWith(String uname, String pword) {
         driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
@@ -44,7 +27,6 @@ public class AddToCartSteps {
         WebElement searchOption = driver.findElement(By.xpath("//span[@class='mat-option-text']"));
         WebElement options = wait.until(ExpectedConditions.visibilityOf(searchOption));
         options.click();
-//        driver.findElement(By.xpath("//span[@class='mat-option-text']")).click();
     }
 
     @When("user adds the book to the cart")
@@ -64,8 +46,6 @@ public class AddToCartSteps {
                 .getText();
         System.out.println("No. of books in cart: " + text);
         Assert.assertEquals(Integer.parseInt(text) > 0, true);
-
-        driver.quit();
     }
 
 }

@@ -1,8 +1,8 @@
 Feature: Bookcart Application Tests
 
   Background:
-    Given User navigates to the BookCart application login
-    And User click on the login button
+#    Given User navigates to the BookCart application login
+    Given User click on the login button
 
   @smoke @reg
   Scenario: Login should be success
