@@ -7,7 +7,11 @@ import cucumber.api.java.en.When;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
@@ -15,11 +19,13 @@ import java.util.concurrent.TimeUnit;
 public class LoginSteps {
 
     WebDriver driver;
+    WebDriverWait wait;
 
     @Given("User navigates to the BookCart application login")
     public void userNavigatesToTheBookCartApplicationLogin() {
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 10);
         driver.get("https://bookcart.azurewebsites.net/");
         WebDriver.Options manage = driver.manage();
         manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -52,17 +58,10 @@ public class LoginSteps {
 
     @Then("Login should be success")
     public void loginShouldBeSuccess() {
-        String text = driver.findElement(By.xpath("/html/body/app-root/app-nav-bar/mat-toolbar/mat-toolbar-row/div[3]/button[3]/span[1]"))
-                .getText();
+        WebElement userEle = driver.findElement(By.xpath("/html/body/app-root/app-nav-bar/mat-toolbar/mat-toolbar-row/div[3]/button[3]/span[1]"));
+        String text = wait.until(ExpectedConditions.visibilityOf(userEle)).getText();
         System.out.println(text);
 
-        try
-        {
-            Thread.sleep(5000);
-        }
-        catch(InterruptedException e)
-        {
-        }
         driver.quit();
     }
 
@@ -84,13 +83,7 @@ public class LoginSteps {
                 .getText();
         System.out.println(text);
         Assert.assertEquals(text.trim(), "Username or Password is incorrect." );
-        try
-        {
-            Thread.sleep(5000);
-        }
-        catch(InterruptedException e)
-        {
-        }
+
         driver.quit();
     }
 

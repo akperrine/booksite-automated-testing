@@ -46,10 +46,15 @@ formatter.examples({
     },
     {
       "cells": [
-        "akperrine",
+        "ak",
         "Practice123",
         "The Simple Wild"
       ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "@one"
     }
   ]
 });
@@ -57,6 +62,12 @@ formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
 });
 formatter.step({
   "name": "User navigates to the BookCart application",
@@ -68,10 +79,21 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Add to cart",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@one"
+    }
+  ]
 });
 formatter.step({
   "name": "user login into the application with \"akperrine\" \"Practice123\"",
@@ -81,6 +103,12 @@ formatter.match({
   "location": "AddToCartSteps.userLoginIntoTheApplicationWith(String,String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
@@ -93,6 +121,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
 formatter.step({
   "name": "user adds the book to the cart",
   "keyword": "When "
@@ -101,6 +135,12 @@ formatter.match({
   "location": "AddToCartSteps.userAddsTheBookToTheCart()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
@@ -113,10 +153,22 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
 });
 formatter.step({
   "name": "User navigates to the BookCart application",
@@ -128,19 +180,36 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Add to cart",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@one"
+    }
+  ]
 });
 formatter.step({
-  "name": "user login into the application with \"akperrine\" \"Practice123\"",
+  "name": "user login into the application with \"ak\" \"Practice123\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "AddToCartSteps.userLoginIntoTheApplicationWith(String,String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
@@ -153,6 +222,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
 formatter.step({
   "name": "user adds the book to the cart",
   "keyword": "When "
@@ -161,6 +236,12 @@ formatter.match({
   "location": "AddToCartSteps.userAddsTheBookToTheCart()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
@@ -173,150 +254,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.uri("src/test/java/features/login.feature");
-formatter.feature({
-  "name": "Bookcart Application Tests",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User navigates to the BookCart application login",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginSteps.userNavigatesToTheBookCartApplicationLogin()"
-});
-formatter.result({
+formatter.afterstep({
   "status": "passed"
 });
-formatter.step({
-  "name": "User click on the login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userClickOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login should be success",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "User enters the username as \"akperrine\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersTheUsernameAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters the password as \"Practice1234\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersThePasswordAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginSteps.userClicksOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Login should be success",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.loginShouldBeSuccess()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User navigates to the BookCart application login",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginSteps.userNavigatesToTheBookCartApplicationLogin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click on the login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userClickOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login should not be success",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "User enters the username as \"ak\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersTheUsernameAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters the password as \"123\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.userEntersThePasswordAs(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginSteps.userClicksOnTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Login should fail",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.loginShouldFail()"
-});
-formatter.result({
+formatter.after({
   "status": "passed"
 });
 });

@@ -9,9 +9,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         dryRun = !true,
         snippets = SnippetType.CAMELCASE,
         monochrome = true,
-        glue = "Steps",
-        plugin = {"pretty", "html:CucumberReports", "json:reports/result.json", "junit:reports/result.xml"}
-
+        glue = {"Steps", "hooks"},
+        plugin = {"pretty", "html:CucumberReports", "json:reports/result.json", "junit:reports/result.xml"},
+        tags = {"@one"}
+//        tags = {"@smoke"}
+//        tags = {"not @smoke"} executes all but @smoke
+//        tags = {"@reg"} executes all scenarios with reg
+//        tags = {"@smoke and @reg"} executes scenarios with only both
 )
 public class Runner extends AbstractTestNGCucumberTests {
 }

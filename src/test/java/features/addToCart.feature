@@ -1,3 +1,4 @@
+#@E2E can have a tag on a whole feature
 Feature: Bookcart Application tests
 
   Background:
@@ -9,7 +10,8 @@ Feature: Bookcart Application tests
     When user adds the book to the cart
     Then the cart badge should get updated
 
+    @one
     Examples:
     |username|password|book|
     |akperrine|Practice123|Roomies|
-    |akperrine|Practice123|The Simple Wild|
+    |ak|Practice123|The Simple Wild|

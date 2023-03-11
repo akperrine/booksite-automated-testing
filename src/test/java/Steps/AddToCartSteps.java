@@ -5,7 +5,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
@@ -13,11 +16,12 @@ import java.util.concurrent.TimeUnit;
 public class AddToCartSteps {
 
     WebDriver driver;
+    WebDriverWait wait;
 
     @Given("User navigates to the BookCart application")
     public void userNavigatesToTheBookCartApplication() {
-//        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 10);
         driver.get("https://bookcart.azurewebsites.net/");
         WebDriver.Options manage = driver.manage();
         manage.timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -37,7 +41,10 @@ public class AddToCartSteps {
     @Given("user searches for a book {string}")
     public void userSearchesForABook(String bookname) {
         driver.findElement(By.xpath("//input[@placeholder='Search books or authors']")).sendKeys(bookname);
-        driver.findElement(By.xpath("//span[@class='mat-option-text']")).click();
+        WebElement searchOption = driver.findElement(By.xpath("//span[@class='mat-option-text']"));
+        WebElement options = wait.until(ExpectedConditions.visibilityOf(searchOption));
+        options.click();
+//        driver.findElement(By.xpath("//span[@class='mat-option-text']")).click();
     }
 
     @When("user adds the book to the cart")
@@ -50,8 +57,12 @@ public class AddToCartSteps {
 
     @Then("the cart badge should get updated")
     public void theCartBadgeShouldGetUpdated() {
+        WebElement snackbar = driver.findElement(By.tagName("snack-bar-container"));
+        wait.until(ExpectedConditions.visibilityOf(snackbar));
+        wait.until(ExpectedConditions.invisibilityOf(snackbar));
         String text = driver.findElement(By.xpath("//*[@id=\"mat-badge-content-0\"]"))
                 .getText();
+        System.out.println("No. of books in cart: " + text);
         Assert.assertEquals(Integer.parseInt(text) > 0, true);
 
         driver.quit();
